@@ -16,10 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"net.vielleichtNiklas.CoffeeMod"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"net.vielleichtNiklas.ExampleModClient"
 		]
 	},
 	"mixins": [

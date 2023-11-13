@@ -17,7 +17,6 @@ public class CoffeeMod implements ModInitializer {
 
     public static final Logger LOGGER = LoggerFactory.getLogger("modid");
 
-	// an instance of our new item
     public static final Bean ROASTED_COFFEE_BEAN = new Bean(new FabricItemSettings());
 
 	private static final ItemGroup ITEM_GROUP = FabricItemGroup.builder()

@@ -1,9 +1,14 @@
-# Fabric Example Mod
 
-## Setup
+# ![Bean](src/main/resources/assets/coffeemod/textures/item/roasted_coffee_bean.png) Coffee Mod for Fabric
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+## Description
+This is a simple mod for Fabric that adds coffee-related items to the game.
 
-## License
+## Installation
+1. Make sure you have installed [Fabric Loader](https://fabricmc.net/use/).
+2. Download the Coffee Mod from the releases page.
+3. Place the downloaded file into your `mods` folder.
+4. Launch the game using the Fabric profile.
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

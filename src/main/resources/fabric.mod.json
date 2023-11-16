@@ -1,11 +1,11 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "coffeemod",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "CoffeeMod",
+	"description": "lul",
 	"authors": [
-		"Me!"
+		"vielleichtNiklas"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -15,6 +15,9 @@
 	"icon": "assets/modid/icon.png",
 	"environment": "*",
 	"entrypoints": {
+		"fabric-datagen":[
+			"net.vielleichtNiklas.CoffeeModDataGenerator"
+		],
 		"main": [
 			"net.vielleichtNiklas.CoffeeMod"
 		],

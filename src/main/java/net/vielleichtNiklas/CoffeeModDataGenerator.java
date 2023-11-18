@@ -22,6 +22,7 @@ public class CoffeeModDataGenerator implements DataGeneratorEntrypoint{
         @Override
         public void generateTranslations(TranslationBuilder translationBuilder) {
             translationBuilder.add("item.coffeemod.roasted_coffee_bean", "Roasted Coffee Bean");
+            translationBuilder.add("item.coffeemod.coffee_bean", "Coffee Bean");
             translationBuilder.add("itemGroup.coffeemod.coffee_nod", "Coffee Mod");
         }
     }
@@ -34,6 +35,7 @@ public class CoffeeModDataGenerator implements DataGeneratorEntrypoint{
         @Override
         public void generateTranslations(TranslationBuilder translationBuilder) {
             translationBuilder.add("item.coffeemod.roasted_coffee_bean", "Geröstete Kaffeebohne");
+            translationBuilder.add("item.coffeemod.coffee_bean", "Kaffeebohne");
             translationBuilder.add("itemGroup.coffeemod.coffee_nod", "Kaffee Mod");
         }
     }

@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/cross",
+    "textures": {
+      "cross": "coffeemod:block/coffee_crop_block_stage0"
+    }
+}

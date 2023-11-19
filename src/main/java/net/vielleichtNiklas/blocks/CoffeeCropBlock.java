@@ -1,4 +1,4 @@
-package net.vielleichtNiklas;
+package net.vielleichtNiklas.blocks;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -8,6 +8,7 @@ import net.minecraft.item.ItemConvertible;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.IntProperty;
 import net.minecraft.state.property.Properties;
+import net.vielleichtNiklas.items.ModItems;
 
 public class CoffeeCropBlock extends CropBlock {
     public static final int MAX_AGE = 3;
@@ -18,7 +19,7 @@ public class CoffeeCropBlock extends CropBlock {
     }
 
     public ItemConvertible getSeedsItem() {
-        return CoffeeMod.COFFEE_BEAN;
+        return ModItems.COFFEE_BEAN;
     }
 
     @Override

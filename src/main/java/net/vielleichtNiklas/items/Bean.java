@@ -1,4 +1,4 @@
-package net.vielleichtNiklas;
+package net.vielleichtNiklas.items;
 
 import net.minecraft.item.FoodComponent;
 

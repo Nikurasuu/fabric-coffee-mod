@@ -21,7 +21,7 @@ public class CoffeeMod implements ModInitializer {
 
     public static final Logger LOGGER = LoggerFactory.getLogger("modid");
 	public static final CoffeeCropBlock COFFEE_CROP_BLOCK = new CoffeeCropBlock(AbstractBlock.Settings.create().nonOpaque().noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP));
-    public static final Bean ROASTED_COFFEE_BEAN = new Bean(new FabricItemSettings());
+    public static final Item ROASTED_COFFEE_BEAN = new Item(new FabricItemSettings().food(Bean.ROASTED_FOOD_COMPONENT));
 	public static final Item COFFEE_BEAN = new AliasedBlockItem(COFFEE_CROP_BLOCK, new FabricItemSettings().food(Bean.FOOD_COMPONENT));
 	
 	private static final ItemGroup ITEM_GROUP = FabricItemGroup.builder()

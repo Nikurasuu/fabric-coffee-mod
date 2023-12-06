@@ -33,7 +33,7 @@ bin/
 run/
 
 # datagen
-src/main/generated
+src/main/generated/
 
 # java
 

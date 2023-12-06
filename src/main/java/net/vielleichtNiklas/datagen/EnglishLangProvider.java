@@ -11,8 +11,9 @@ public class EnglishLangProvider extends FabricLanguageProvider {
 
     @Override
     public void generateTranslations(TranslationBuilder translationBuilder) {
-        translationBuilder.add("item.coffeemod.roasted_coffee_bean", "Roasted Coffee Bean");
-        translationBuilder.add("item.coffeemod.coffee_bean", "Coffee Bean");
+        translationBuilder.add("item.coffeemod.roasted_coffee_beans", "Roasted Coffee Beans");
+        translationBuilder.add("item.coffeemod.coffee_beans", "Coffee Beans");
+        translationBuilder.add("item.coffeemod.ground_coffee", "Ground Coffee");
     }
     
 }

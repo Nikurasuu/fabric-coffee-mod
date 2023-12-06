@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/crop",
-  "textures": {
-    "crop": "coffeemod:block/coffee_crop_block_stage0"
-  }
-}

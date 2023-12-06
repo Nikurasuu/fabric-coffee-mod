@@ -9,11 +9,14 @@ import net.minecraft.util.Identifier;
 import net.vielleichtNiklas.blocks.ModBlocks;
 
 public class ModItems {
-    public static final Item ROASTED_COFFEE_BEAN = new Item(new FabricItemSettings().food(Bean.ROASTED_FOOD_COMPONENT));
-    public static final Item COFFEE_BEAN = new AliasedBlockItem(ModBlocks.COFFEE_CROP_BLOCK, new FabricItemSettings().food(Bean.FOOD_COMPONENT));
+    // TODO: Make new textures for these items, since they are now multiple beans instead of one bean
+    public static final Item ROASTED_COFFEE_BEANS = new Item(new FabricItemSettings().food(Bean.ROASTED_FOOD_COMPONENT));
+    public static final Item COFFEE_BEANS = new AliasedBlockItem(ModBlocks.COFFEE_CROP_BLOCK, new FabricItemSettings().food(Bean.FOOD_COMPONENT));
+    public static final Item GROUND_COFFEE = new Item(new FabricItemSettings());
 
     public static void registerItems() {
-        Registry.register(Registries.ITEM, new Identifier("coffeemod", "roasted_coffee_bean"), ROASTED_COFFEE_BEAN);
-        Registry.register(Registries.ITEM, new Identifier("coffeemod", "coffee_bean"), COFFEE_BEAN);
+        Registry.register(Registries.ITEM, new Identifier("coffeemod", "roasted_coffee_beans"), ROASTED_COFFEE_BEANS);
+        Registry.register(Registries.ITEM, new Identifier("coffeemod", "coffee_beans"), COFFEE_BEANS);
+        Registry.register(Registries.ITEM, new Identifier("coffeemod", "ground_coffee"), GROUND_COFFEE);
     }
 }

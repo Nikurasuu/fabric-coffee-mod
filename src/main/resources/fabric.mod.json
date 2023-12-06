@@ -22,7 +22,7 @@
 			"net.vielleichtNiklas.CoffeeMod"
 		],
 		"client": [
-			"net.vielleichtNiklas.ExampleModClient"
+			"net.vielleichtNiklas.CoffeeModClient"
 		]
 	},
 	"mixins": [

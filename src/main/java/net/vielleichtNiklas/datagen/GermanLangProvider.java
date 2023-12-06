@@ -10,8 +10,9 @@ public class GermanLangProvider extends FabricLanguageProvider {
 
     @Override
     public void generateTranslations(TranslationBuilder translationBuilder) {
-        translationBuilder.add("item.coffeemod.roasted_coffee_bean", "Geröstete Kaffeebohne");
-        translationBuilder.add("item.coffeemod.coffee_bean", "Kaffeebohne");
+        translationBuilder.add("item.coffeemod.roasted_coffee_beans", "Geröstete Kaffeebohnen");
+        translationBuilder.add("item.coffeemod.coffee_beans", "Kaffeebohnen");
+        translationBuilder.add("item.coffeemod.ground_coffee", "Gemahlener Kaffee");
     }
     
 }

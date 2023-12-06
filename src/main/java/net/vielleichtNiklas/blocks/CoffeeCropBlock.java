@@ -19,7 +19,7 @@ public class CoffeeCropBlock extends CropBlock {
     }
 
     public ItemConvertible getSeedsItem() {
-        return ModItems.COFFEE_BEAN;
+        return ModItems.COFFEE_BEANS;
     }
 
     @Override

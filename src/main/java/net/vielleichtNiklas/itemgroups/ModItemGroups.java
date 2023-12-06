@@ -11,11 +11,12 @@ import net.vielleichtNiklas.items.ModItems;
 
 public class ModItemGroups {
     private static final ItemGroup ITEM_GROUP = FabricItemGroup.builder()
-    	.icon(() -> new ItemStack(ModItems.ROASTED_COFFEE_BEAN))
+    	.icon(() -> new ItemStack(ModItems.ROASTED_COFFEE_BEANS))
     	.displayName(Text.translatable("Coffee Mod"))
             .entries((context, entries) -> {
-    		entries.add(ModItems.ROASTED_COFFEE_BEAN);
-			entries.add(ModItems.COFFEE_BEAN);
+    		entries.add(ModItems.ROASTED_COFFEE_BEANS);
+			entries.add(ModItems.COFFEE_BEANS);
+			entries.add(ModItems.GROUND_COFFEE);
     	})
     	.build();
 

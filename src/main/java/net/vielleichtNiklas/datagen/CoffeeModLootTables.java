@@ -15,14 +15,13 @@ public class CoffeeModLootTables extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        addDrop(ModBlocks.COFFEE_CROP_BLOCK, drops(ModItems.COFFEE_BEAN));
+        addDrop(ModBlocks.COFFEE_CROP_BLOCK, drops(ModItems.COFFEE_BEANS));
 
         BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition.builder(ModBlocks.COFFEE_CROP_BLOCK).properties(StatePredicate.Builder.create()
             .exactMatch(CoffeeCropBlock.AGE, 3));
         // FIXME: This is a bit of a hack, but it works
         // cropDrops is meant to be used with a loot item and seperate seed item
         // but we want to drop the same item for both, just some more of it
-        addDrop(ModBlocks.COFFEE_CROP_BLOCK, cropDrops(ModBlocks.COFFEE_CROP_BLOCK, ModItems.COFFEE_BEAN, ModItems.COFFEE_BEAN, builder));
-
+        addDrop(ModBlocks.COFFEE_CROP_BLOCK, cropDrops(ModBlocks.COFFEE_CROP_BLOCK, ModItems.COFFEE_BEANS, ModItems.COFFEE_BEANS, builder));
     }
 }

@@ -21,6 +21,7 @@ public class CoffeeModModels extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(ModItems.ROASTED_COFFEE_BEAN, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ROASTED_COFFEE_BEANS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GROUND_COFFEE, Models.GENERATED);
     }
 }

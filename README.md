@@ -12,3 +12,8 @@ This is a simple mod for Fabric that adds coffee-related items to the game.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## Development
+1. Clone the repository.
+2. Run `./gradlew dataGen` to generate the the assets and data files.
+3. Run `./gradlew runClient` to run the game and test the mod.

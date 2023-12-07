@@ -1,5 +1,5 @@
 
-# ![Bean](src/main/resources/assets/coffeemod/textures/item/roasted_coffee_bean.png) Coffee Mod for Fabric
+# ![Bean](src/main/resources/assets/coffeemod/textures/item/roasted_coffee_beans.png) Coffee Mod for Fabric
 
 ## Description
 This is a simple mod for Fabric that adds coffee-related items to the game.

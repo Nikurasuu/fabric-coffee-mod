@@ -11,7 +11,7 @@ import net.minecraft.recipe.book.RecipeCategory;
 import net.vielleichtNiklas.items.ModItems;
 
 public class CoffeeModRecipes extends FabricRecipeProvider {
-    private static final List<ItemConvertible> COFFEE_SMELTABLES = List.of(ModItems.COFFEE_BEANS, ModItems.ROASTED_COFFEE_BEANS);
+    private static final List<ItemConvertible> COFFEE_SMELTABLES = List.of(ModItems.COFFEE_BEANS);
 
     public CoffeeModRecipes(FabricDataOutput generator) {
         super(generator);
@@ -19,10 +19,12 @@ public class CoffeeModRecipes extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter exporter) {
-        offerSmelting(exporter, COFFEE_SMELTABLES, RecipeCategory.MISC, ModItems.ROASTED_COFFEE_BEANS, 0.7f, 100, "roasted_coffee_bean");
+        offerSmelting(exporter, COFFEE_SMELTABLES, RecipeCategory.FOOD, ModItems.ROASTED_COFFEE_BEANS, 0.7f, 100, "roasted_coffee_bean_smelting");
+        offerBlasting(exporter, COFFEE_SMELTABLES, RecipeCategory.FOOD, ModItems.ROASTED_COFFEE_BEANS, 0.5f, 35, "roasted_coffee_bean_blasting");
         
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.GROUND_COFFEE).input(ModItems.ROASTED_COFFEE_BEANS).criterion(FabricRecipeProvider.hasItem(ModItems.ROASTED_COFFEE_BEANS), 
-          FabricRecipeProvider.conditionsFromItem(ModItems.ROASTED_COFFEE_BEANS)).criterion(FabricRecipeProvider.hasItem(ModItems.GROUND_COFFEE), 
-          FabricRecipeProvider.conditionsFromItem(ModItems.ROASTED_COFFEE_BEANS)).offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.GROUND_COFFEE)
+            .input(ModItems.ROASTED_COFFEE_BEANS)
+            .criterion(FabricRecipeProvider.hasItem(ModItems.ROASTED_COFFEE_BEANS), FabricRecipeProvider.conditionsFromItem(ModItems.ROASTED_COFFEE_BEANS))
+            .offerTo(exporter);
     }
 }

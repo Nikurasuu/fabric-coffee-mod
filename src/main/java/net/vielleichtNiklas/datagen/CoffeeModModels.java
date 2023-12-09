@@ -16,7 +16,7 @@ public class CoffeeModModels extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerCrop(ModBlocks.COFFEE_CROP_BLOCK, CoffeeCropBlock.AGE, 0,1,2,3);
+        blockStateModelGenerator.registerCrop(ModBlocks.COFFEE_CROP_BLOCK, CoffeeCropBlock.AGE, 0,1,2,3,4);
     }
 
     @Override

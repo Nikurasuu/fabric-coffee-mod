@@ -11,8 +11,8 @@ import net.minecraft.state.property.Properties;
 import net.vielleichtNiklas.items.ModItems;
 
 public class CoffeeCropBlock extends CropBlock {
-    public static final int MAX_AGE = 3;
-    public static final IntProperty AGE = Properties.AGE_3;
+    public static final int MAX_AGE = 4;
+    public static final IntProperty AGE = Properties.AGE_4;
 
     public CoffeeCropBlock(AbstractBlock.Settings settings) {
         super(settings);

@@ -9,7 +9,6 @@ import net.minecraft.util.Identifier;
 import net.vielleichtNiklas.blocks.ModBlocks;
 
 public class ModItems {
-    // TODO: Make new textures for these items, since they are now multiple beans instead of one bean
     public static final Item ROASTED_COFFEE_BEANS = new Item(new FabricItemSettings().food(Bean.ROASTED_FOOD_COMPONENT));
     public static final Item COFFEE_BEANS = new AliasedBlockItem(ModBlocks.COFFEE_CROP_BLOCK, new FabricItemSettings().food(Bean.FOOD_COMPONENT));
     public static final Item GROUND_COFFEE = new Item(new FabricItemSettings());

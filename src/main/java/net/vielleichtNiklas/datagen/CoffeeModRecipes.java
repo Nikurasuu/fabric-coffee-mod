@@ -6,9 +6,11 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.vielleichtNiklas.items.ModItems;
+import net.minecraft.item.Items;
 
 public class CoffeeModRecipes extends FabricRecipeProvider {
     private static final List<ItemConvertible> COFFEE_SMELTABLES = List.of(ModItems.COFFEE_BEANS);
@@ -26,5 +28,18 @@ public class CoffeeModRecipes extends FabricRecipeProvider {
             .input(ModItems.ROASTED_COFFEE_BEANS)
             .criterion(FabricRecipeProvider.hasItem(ModItems.ROASTED_COFFEE_BEANS), FabricRecipeProvider.conditionsFromItem(ModItems.ROASTED_COFFEE_BEANS))
             .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.ESPRESSO_CUP)
+                .input(Items.WHITE_DYE)
+                .input(Items.BRICK)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.ROASTED_COFFEE_BEANS), FabricRecipeProvider.conditionsFromItem(ModItems.ROASTED_COFFEE_BEANS))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.COFFEE_CUP).pattern("bib").pattern(" b ")
+                .input('b' , Items.BRICK)
+                .input('i', Items.WHITE_DYE)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.COFFEE_CUP), FabricRecipeProvider.conditionsFromItem(ModItems.COFFEE_CUP))
+                .offerTo(exporter);
+
     }
 }

@@ -14,6 +14,10 @@ public class EnglishLangProvider extends FabricLanguageProvider {
         translationBuilder.add("item.coffeemod.roasted_coffee_beans", "Roasted Coffee Beans");
         translationBuilder.add("item.coffeemod.coffee_beans", "Coffee Beans");
         translationBuilder.add("item.coffeemod.ground_coffee", "Ground Coffee");
+        translationBuilder.add("item.coffeemod.espresso_cup", "Espresso Cup");
+        translationBuilder.add("item.coffeemod.coffee_cup", "Coffee Cup");
+        translationBuilder.add("item.coffeemod.espresso", "Espresso");
+        translationBuilder.add("item.coffeemod.black_coffee", "Black Coffee");
+        translationBuilder.add("item.coffeemod.cappuccino", "Cappuccino");
     }
-    
 }

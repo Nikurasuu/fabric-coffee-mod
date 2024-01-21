@@ -17,6 +17,11 @@ public class ModItemGroups {
     		entries.add(ModItems.ROASTED_COFFEE_BEANS);
 			entries.add(ModItems.COFFEE_BEANS);
 			entries.add(ModItems.GROUND_COFFEE);
+			entries.add(ModItems.ESPRESSO_CUP);
+			entries.add(ModItems.COFFEE_CUP);
+			entries.add(ModItems.ESPRESSO);
+			entries.add(ModItems.BLACK_COFFEE);
+			entries.add(ModItems.CAPPUCCINO);
     	})
     	.build();
 

@@ -23,5 +23,12 @@ public class CoffeeModModels extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.ROASTED_COFFEE_BEANS, Models.GENERATED);
         itemModelGenerator.register(ModItems.GROUND_COFFEE, Models.GENERATED);
+
+        // TODO: Add textures for these items
+        itemModelGenerator.register(ModItems.ESPRESSO_CUP, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COFFEE_CUP, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ESPRESSO, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BLACK_COFFEE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CAPPUCCINO, Models.GENERATED);
     }
 }

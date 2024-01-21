@@ -13,6 +13,10 @@ public class GermanLangProvider extends FabricLanguageProvider {
         translationBuilder.add("item.coffeemod.roasted_coffee_beans", "Geröstete Kaffeebohnen");
         translationBuilder.add("item.coffeemod.coffee_beans", "Kaffeebohnen");
         translationBuilder.add("item.coffeemod.ground_coffee", "Gemahlener Kaffee");
+        translationBuilder.add("item.coffeemod.espresso_cup", "Espressotasse");
+        translationBuilder.add("item.coffeemod.coffee_cup", "Kaffeetasse");
+        translationBuilder.add("item.coffeemod.espresso", "Espresso");
+        translationBuilder.add("item.coffeemod.black_coffee", "Schwarzer Kaffee");
+        translationBuilder.add("item.coffeemod.cappuccino", "Cappuccino");
     }
-    
 }

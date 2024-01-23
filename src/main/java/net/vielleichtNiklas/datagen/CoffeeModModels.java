@@ -30,5 +30,10 @@ public class CoffeeModModels extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ESPRESSO, Models.GENERATED);
         itemModelGenerator.register(ModItems.BLACK_COFFEE, Models.GENERATED);
         itemModelGenerator.register(ModItems.CAPPUCCINO, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.PAPER_CUP, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ESPRESSO_TO_GO, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BLACK_COFFEE_TO_GO, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CAPPUCCINO_TO_GO, Models.GENERATED);
     }
 }

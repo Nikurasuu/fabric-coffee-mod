@@ -41,5 +41,10 @@ public class CoffeeModRecipes extends FabricRecipeProvider {
                 .criterion(FabricRecipeProvider.hasItem(ModItems.COFFEE_CUP), FabricRecipeProvider.conditionsFromItem(ModItems.COFFEE_CUP))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.PAPER_CUP).pattern("p p").pattern(" p ")
+                .input('p', Items.PAPER)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.PAPER_CUP), FabricRecipeProvider.conditionsFromItem(ModItems.PAPER_CUP))
+                .offerTo(exporter);
+
     }
 }

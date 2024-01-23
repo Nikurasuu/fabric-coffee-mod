@@ -17,11 +17,17 @@ public class ModItemGroups {
     		entries.add(ModItems.ROASTED_COFFEE_BEANS);
 			entries.add(ModItems.COFFEE_BEANS);
 			entries.add(ModItems.GROUND_COFFEE);
+
 			entries.add(ModItems.ESPRESSO_CUP);
 			entries.add(ModItems.COFFEE_CUP);
 			entries.add(ModItems.ESPRESSO);
 			entries.add(ModItems.BLACK_COFFEE);
 			entries.add(ModItems.CAPPUCCINO);
+
+			entries.add(ModItems.PAPER_CUP);
+			entries.add(ModItems.ESPRESSO_TO_GO);
+			entries.add(ModItems.BLACK_COFFEE_TO_GO);
+			entries.add(ModItems.CAPPUCCINO_TO_GO);
     	})
     	.build();
 

@@ -14,10 +14,8 @@ public class CoffeeMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Initializing CoffeeMod");
-		LOGGER.info("Registering Items and Blocks");
 		ModBlocks.registerBlocks();
 		ModItems.registerItems();
-		LOGGER.info("Registering ItemGroups");
 		ModItemGroups.registerItemGroups();
 		LOGGER.info("CoffeeMod initialized");
 	}

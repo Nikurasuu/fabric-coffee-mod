@@ -25,5 +25,7 @@ public class EnglishLangProvider extends FabricLanguageProvider {
         translationBuilder.add("item.coffeemod.espresso_to_go", "Espresso To Go");
         translationBuilder.add("item.coffeemod.black_coffee_to_go", "Black Coffee To Go");
         translationBuilder.add("item.coffeemod.cappuccino_to_go", "Cappuccino To Go");
+
+        translationBuilder.add("effect.coffeemod.caffeine", "Caffeine");
     }
 }

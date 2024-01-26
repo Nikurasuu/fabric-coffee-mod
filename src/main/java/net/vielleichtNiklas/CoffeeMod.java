@@ -2,6 +2,7 @@ package net.vielleichtNiklas;
 
 import net.fabricmc.api.ModInitializer;
 import net.vielleichtNiklas.blocks.ModBlocks;
+import net.vielleichtNiklas.effects.ModStatusEffects;
 import net.vielleichtNiklas.itemgroups.ModItemGroups;
 import net.vielleichtNiklas.items.ModItems;
 import org.slf4j.Logger;
@@ -17,6 +18,7 @@ public class CoffeeMod implements ModInitializer {
 		ModBlocks.registerBlocks();
 		ModItems.registerItems();
 		ModItemGroups.registerItemGroups();
+		ModStatusEffects.registerStatusEffects();
 		LOGGER.info("CoffeeMod initialized");
 	}
 }

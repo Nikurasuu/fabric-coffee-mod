@@ -11,9 +11,9 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
-public class ToGoItem extends Item {
+public class DrinkableItem extends Item {
 
-    public ToGoItem(Settings settings) {
+    public DrinkableItem(Settings settings) {
         super(settings);
     }
 

@@ -3,15 +3,15 @@ package net.vielleichtNiklas.items;
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.item.*;
+import net.minecraft.item.ItemStack;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.stat.Stats;
 import net.minecraft.world.World;
 import net.vielleichtNiklas.effects.ModStatusEffects;
 
-public class CoffeeCupItem extends DrinkableItem {
+public class ToGoCupItem extends DrinkableItem {
 
-    public CoffeeCupItem(Item.Settings settings) {
+    public ToGoCupItem(Settings settings) {
         super(settings);
     }
 
@@ -23,7 +23,7 @@ public class CoffeeCupItem extends DrinkableItem {
             serverPlayerEntity.addStatusEffect(new StatusEffectInstance(ModStatusEffects.CAFFEINE, 3600, 0));
             serverPlayerEntity.incrementStat(Stats.USED.getOrCreateStat(this));
         }
-        return new ItemStack(ModItems.COFFEE_CUP);
+        return ItemStack.EMPTY;
     }
 
 }

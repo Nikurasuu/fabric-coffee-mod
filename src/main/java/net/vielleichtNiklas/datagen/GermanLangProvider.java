@@ -24,5 +24,7 @@ public class GermanLangProvider extends FabricLanguageProvider {
         translationBuilder.add("item.coffeemod.espresso_to_go", "Espresso zum Mitnehmen");
         translationBuilder.add("item.coffeemod.black_coffee_to_go", "Schwarzer Kaffee zum Mitnehmen");
         translationBuilder.add("item.coffeemod.cappuccino_to_go", "Cappuccino zum Mitnehmen");
+
+        translationBuilder.add("effect.coffeemod.caffeine", "Koffein");
     }
 }

@@ -21,8 +21,8 @@ public class ModItems {
     public static final Item CAPPUCCINO = new CoffeeCupItem(new FabricItemSettings().maxCount(1).food(ModFoodComponents.CAPPUCCINO));
 
     public static final Item PAPER_CUP = new Item(new FabricItemSettings().maxCount(16));
-    public static final Item BLACK_COFFEE_TO_GO = new ToGoItem(new FabricItemSettings().maxCount(1).food(ModFoodComponents.BLACK_COFFEE));
-    public static final Item CAPPUCCINO_TO_GO = new ToGoItem(new FabricItemSettings().maxCount(1).food(ModFoodComponents.CAPPUCCINO));
+    public static final Item BLACK_COFFEE_TO_GO = new ToGoCupItem(new FabricItemSettings().maxCount(1).food(ModFoodComponents.BLACK_COFFEE));
+    public static final Item CAPPUCCINO_TO_GO = new ToGoCupItem(new FabricItemSettings().maxCount(1).food(ModFoodComponents.CAPPUCCINO));
 
     public static void registerItems() {
         Registry.register(Registries.ITEM, new Identifier("coffeemod", "roasted_coffee_beans"), ROASTED_COFFEE_BEANS);
